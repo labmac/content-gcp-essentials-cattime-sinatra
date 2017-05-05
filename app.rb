@@ -1,4 +1,6 @@
 class CatTime < Sinatra::Base
+
+  set :port, 8080  
   
   get '/' do
     @cat_pic = get_a_cat()
